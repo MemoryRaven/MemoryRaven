@@ -236,9 +236,8 @@ docker-compose up -d
 ### Connect With Ravens
 - 🌐 **Website**: [memoryraven.ai](https://memoryraven.ai)
 - 💬 **Telegram**: [@MemoryRavenOfficial](https://t.me/RavenBadBihh_Bot)
-- 🐦 **Twitter**: [@MemoryRaven](https://twitter.com/MemoryRaven)
+- 🐦 **Twitter**: [@memoryraven](https://x.com/memoryraven)
 - 💎 **Discord**: [Join the Conspiracy](https://discord.gg/memoryraven)
-- 📧 **Email**: gm@memoryraven.ai
 
 ### Contribute & Earn
 - 🐛 Bug Bounties in $RAVEN

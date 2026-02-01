@@ -85,7 +85,6 @@ await raven.stake_raven(amount=1000)  # Unlock premium features
 ## Need Help?
 
 - 💬 [Telegram Community](https://t.me/RavenBadBihh_Bot)
-- 🐦 [Twitter Support](https://twitter.com/MemoryRaven)
-- 📧 Email: support@memoryraven.ai
+- 🐦 [Twitter Support](https://x.com/memoryraven)
 
 Happy remembering! 🧠✨
