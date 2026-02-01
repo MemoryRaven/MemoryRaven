@@ -96,7 +96,7 @@ class MemoryBridge:
         # Initialize local embedder
         self._init_embedder()
 
-    def _init_schema(self):
+    def _init_schema(self) -> None:
         """Initialize SQLite schema"""
         cursor = self.conn.cursor()
 
