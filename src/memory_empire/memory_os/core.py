@@ -71,7 +71,7 @@ class MemoryBridge:
         db_path: str = "~/.claude_memory/memory.db",
         pinecone_api_key: str | None = None,
         pinecone_environment: str | None = None,
-        pinecone_index: str = "claude-memory",
+        pinecone_index_name: str = "claude-memory",
     ):
         self.db_path = Path(db_path).expanduser()
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
@@ -87,9 +87,9 @@ class MemoryBridge:
                 import pinecone
 
                 pinecone.init(api_key=pinecone_api_key, environment=pinecone_environment)
-                self.index = pinecone.Index(pinecone_index)
+                self.index = pinecone.Index(pinecone_index_name)
                 self.pinecone_enabled = True
-                logger.info(f"Pinecone initialized: {pinecone_index}")
+                logger.info(f"Pinecone initialized: {pinecone_index_name}")
             except Exception as e:
                 logger.warning(f"Pinecone init failed: {e}. Using local only.")
 
