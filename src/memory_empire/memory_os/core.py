@@ -164,7 +164,7 @@ class MemoryBridge:
 
         self.conn.commit()
 
-    def _init_embedder(self):
+    def _init_embedder(self) -> None:
         """Initialize local embedding model"""
         try:
             from sentence_transformers import SentenceTransformer
