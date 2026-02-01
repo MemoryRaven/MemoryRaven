@@ -25,7 +25,7 @@ def get_memory_bridge():
         db_path=os.environ.get("CLAUDE_MEMORY_DB", "~/.claude_memory/memory.db"),
         pinecone_api_key=os.environ.get("PINECONE_API_KEY"),
         pinecone_environment=os.environ.get("PINECONE_ENVIRONMENT"),
-        pinecone_index=os.environ.get("PINECONE_INDEX", "claude-memory"),
+        pinecone_index_name=os.environ.get("PINECONE_INDEX", "claude-memory"),
     )
 
 
