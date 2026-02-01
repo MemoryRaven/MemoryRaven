@@ -1,0 +1,17 @@
+[Unit]
+Description=Clawdbot Memory → Memory Service bridge
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/bigphoot
+ExecStart=/home/bigphoot/memory-empire/scripts/clawdbot_memory_bridge.py
+Restart=always
+RestartSec=2
+Environment=MEMORY_BRIDGE_WORKSPACE=/home/bigphoot
+Environment=MEMORY_BRIDGE_API_URL=http://127.0.0.1:8088
+# Set in an override file: MEMORY_BRIDGE_API_KEY=...
+
+[Install]
+WantedBy=default.target

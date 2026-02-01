@@ -1,0 +1,1 @@
+"""AKS - Academic Knowledge System."""

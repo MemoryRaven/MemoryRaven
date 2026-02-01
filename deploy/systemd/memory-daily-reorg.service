@@ -1,0 +1,11 @@
+[Unit]
+Description=Memory Empire Daily Reorganization
+After=network-online.target docker.service
+Wants=network-online.target docker.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/bigphoot
+Environment=MEMORY_SERVICE_POSTGRES_DSN=postgresql://memory:change_me_now@127.0.0.1:5432/memory
+Environment=DAILY_REORG_WORKSPACE=/home/bigphoot
+ExecStart=/home/bigphoot/memory-empire/scripts/daily_reorg.py

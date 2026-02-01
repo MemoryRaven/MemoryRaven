@@ -1,0 +1,7 @@
+# Core is stdlib-only.
+# Optional extras:
+# chromadb
+# sentence-transformers
+# pypdf
+# beautifulsoup4
+# lxml
