@@ -19,7 +19,7 @@ from .retrieval import MemoryRetrieval
 console = Console()
 
 
-def get_memory_bridge():
+def get_memory_bridge() -> MemoryBridge:
     """Get memory bridge instance from environment or defaults"""
     return MemoryBridge(
         db_path=os.environ.get("CLAUDE_MEMORY_DB", "~/.claude_memory/memory.db"),
