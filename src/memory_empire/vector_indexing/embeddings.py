@@ -58,6 +58,8 @@ class SentenceTransformersEmbedder:
         self._model = SentenceTransformer(model_name)
 
     def embed(self, texts: list[str]) -> list[list[float]]:
+        if not texts:
+            return []
         vecs = self._model.encode(texts, normalize_embeddings=True)
         return [v.tolist() for v in vecs]
 
